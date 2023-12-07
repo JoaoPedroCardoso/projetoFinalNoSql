@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: projetoFinalNoSql
+  data:
+    mongodb:
+      port: 27017
+      host: localhost
+      database: imovel
+
+server:
+  port: 8080
+
+# Mostrar Queries MongoDB no Terminal:
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
