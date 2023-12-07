@@ -4,8 +4,10 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.io.Serializable;
+
 @Document(collection = "imovel")
-public class Imovel {
+public class Imovel implements Serializable {
 
     @Id
     private ObjectId id;

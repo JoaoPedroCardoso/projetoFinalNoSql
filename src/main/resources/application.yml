@@ -1,11 +1,17 @@
 spring:
   application:
     name: projetoFinalNoSql
+  cache:
+    type: redis
   data:
     mongodb:
       port: 27017
       host: localhost
       database: imovel
+    redis:
+      host: localhost
+      port: 6379
+      serializer: org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer
 
 server:
   port: 8080
